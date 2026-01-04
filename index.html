@@ -25,13 +25,13 @@
       src="https://kit.fontawesome.com/c23338a1d8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Lilia Pianella - front-end developer</title>
   </head>
   <body>
-    <header class="p-5">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom-color">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Lilia Pianella</a>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-custom-color">
+        <div class="container">
+          <a class="navbar-brand" href="/" title="Homepage">Lilia Pianella</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,18 +44,21 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link" href="/about.html">About me</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="/working-on.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -64,62 +67,144 @@
                 </a>
                 <ul class="dropdown-menu navbar-custom-color">
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a
+                      class="dropdown-item"
+                      href="/working-on.html#front-end-developer-projects"
                       >Front-end developer projects</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Research projects</a>
+                    <a
+                      class="dropdown-item"
+                      href="/working-on.html#research-projects"
+                      >Research projects</a
+                    >
                   </li>
-                  <!-- <li><hr class="dropdown-divider" /></li> -->
                   <li>
-                    <a class="dropdown-item" href="#">Gastronomy</a>
+                    <a class="dropdown-item" href="/working-on.html#gastronomy"
+                      >Gastronomy</a
+                    >
                   </li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="text-center p-5">
+      <div class="text-center pt-5">
         <h2>Hi I’am</h2>
         <h1>Lilia Pianella</h1>
-        <h3>Frontend Developer, based in Denmark.</h3>
-        <button class="change-theme-button">Change Theme</button>
+        <h3>Frontend Developer, based in Denmark</h3>
+        <!-- <div class="projects-link mb-5">
+          <a href="/contact.html" title="Contact Matt Delac">Contact me</a>
+          <a href="/about.html" title="About Matt Delac">About me</a>
+
+          <button class="change-theme-button">Change Theme</button>
+        </div> -->
       </div>
     </header>
     <main>
-      <p class="text-center p-4">
-        A curated collection of projects demonstrating my expertise
-      </p>
+      <!-- <p class="text-center p-4">
+        A curated collection of projects demonstrating my expertise in coding
+      </p> -->
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <!-- <img
+            <img
               src="/images/meteo-app.png"
-              alt="Meteo app "
+              alt="Meteo weather app"
               class="img-fluid rounded d-none d-sm-block"
             />
           </div>
           <div class="col-sm-6">
-            <h2 class="mb-3">Yoga app</h2>
+            <h2 class="mb-3">Weather app</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
               minima fugiat explicabo eum dolore.
             </p>
-            <div class="mt-5">
-              <a href="#" class="primary-link project-link" title="Yoga project"
-                >Launch Yoga App</a
-              > -->
-            <!-- </div> -->
+            <div class="mt-5 projects-link">
+              <a
+                href="https://meteo-current-and-forecast.vercel.app/"
+                class="projects-link project-link"
+                title="Yoga project"
+                target="_blank"
+                >Launch App</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-6">
+            <h2 class="mb-3">AI-Curriculum Quotes generator App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5 projects-link">
+              <a
+                href="https://ai-curriculum-quotes-generator.vercel.app/"
+                class="projects-link project-link"
+                title="Yoga project"
+                target="_blank"
+                >Launch App</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img
+              src="/images/ai-curriculum-quote-generator.png"
+              alt="Meteo weather app"
+              class="img-fluid rounded d-none d-sm-block"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-6">
+            <img
+              src="/images/clock-world .png"
+              alt="Meteo weather app"
+              class="img-fluid rounded d-none d-sm-block"
+            />
+          </div>
+          <div class="col-sm-6">
+            <h2 class="mb-3">Clock World</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5 projects-link">
+              <a
+                href="https://future-world-clock-today-timezones.vercel.app/"
+                class="projects-link project-link"
+                title="World Clock App - a clock with the time from different timezones"
+                target="_blank"
+                >Launch App</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </main>
     <br />
     <footer>
+      <div class="text-center mt-3 mb-3">
+        <a class="email-link" href="emailto:pianella.lilia@gmail.com"
+          >pianella.lilia@gmail.com</a
+        >
+      </div>
       <div class="d-flex justify-content-center pb-4">
         <i
           class="fa-brands fa-square-linkedin fs-4"
