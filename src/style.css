@@ -78,6 +78,11 @@ p {
   box-shadow: var(--box-shadow);
   transition: all 200ms ease-in-out;
 }
+.talk-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+}
 .project-link a:hover {
   background: #e6f3e8;
   color: var(--secondary-color);
@@ -94,6 +99,21 @@ p {
   color: #4d6a61 !important;
 }
 
+.image-lilia {
+  max-width: 350px;
+  padding: 0 20px;
+  filter: grayscale(100%);
+}
+.image-lilia:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+}
+.work-inquiry-section {
+  background: var(--primary-color);
+  border-radius: 6px;
+  padding: 30px 50px !important;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 48px;
@@ -117,5 +137,9 @@ p {
     display: block;
     margin: 0 auto;
     width: 95%;
+  }
+  .work-inquiry-section {
+    text-align: center;
+    padding: 10px 20px;
   }
 }
