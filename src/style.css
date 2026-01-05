@@ -89,6 +89,7 @@ p {
   border-bottom: 3px solid #4d6a61 !important;
   color: #4d6a61 !important;
 }
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
