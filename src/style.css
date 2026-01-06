@@ -147,7 +147,10 @@ p {
     padding: 100px 20px 50px;
   }
   .hero h2 {
-    font-size: 18px !important;
+    font-size: 24px !important;
+  }
+  .hero h3 {
+    font-size: 16px !important;
   }
 
   /* .hero h1 {
