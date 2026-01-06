@@ -15,12 +15,18 @@ body {
 .navbar-custom-color {
   background: var(--primary-color) !important;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   border-bottom: 3px solid #4d6a61 !important;
   color: #4d6a61 !important;
 }
 .bg-light {
   background: white !important;
+}
+
+.dropdown-item:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 h1,
@@ -42,6 +48,9 @@ h2 {
 
 h3 {
   font-size: 36px;
+}
+h4 {
+  font-size: 48px;
 }
 p {
   font-size: 16px;
@@ -67,7 +76,7 @@ p {
   font-size: 24px;
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 .content {
   margin: 30px;
@@ -77,15 +86,18 @@ p {
   font-size: 64px;
   line-height: 80px;
 }
+
 .content h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
-}
-.content h3 {
   font-size: 24px;
   line-height: 1.5;
   font-family: var(--default-font-family);
 }
+
+.content h3 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
 .content p {
   font-size: 14px;
 }
@@ -107,7 +119,7 @@ p {
 }
 
 .project-description {
-  padding: 120px 60px;
+  padding: 90px 60px;
 }
 
 /* to check here */
@@ -125,10 +137,35 @@ p {
 .work-inquiry-section {
   background: var(--primary-color);
   border-radius: 6px;
+  padding: 30px 120px;
 }
 
+.contact-info:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  padding: 8px 10px 0px;
+  border-radius: 4px;
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
 /* media section */
 @media (max-width: 900px) {
+  .nav-link:hover,
+  .nav-link.active {
+    border-bottom: none !important;
+  }
+
   h1 {
     font-size: 44px !important;
     line-height: 1.2 !important;
@@ -140,6 +177,7 @@ p {
   h3 {
     margin-bottom: 0;
   }
+
   p {
     text-align: center;
   }
@@ -152,12 +190,6 @@ p {
   .hero h3 {
     font-size: 16px !important;
   }
-
-  /* .hero h1 {
-    margin-top: 0;
-    font-size: 44px !important;
-    line-height: 56px !important;
-  } */
 
   .project-description h2 {
     margin-bottom: 20px !important;
@@ -175,12 +207,18 @@ p {
     padding: 0;
   }
   .new-app {
-    margin-bottom: 30px !important;
+    margin-bottom: 0px !important;
+  }
+  .new-app:last child {
+    margin-bottom: 0 !important;
   }
   .project-description {
     text-align: center;
     padding: 15px 30px;
   }
+  /* .project-description:last child {
+    margin-bottom: 0 !important;
+  } */
   .btn-branding {
     text-align: center;
     display: block;
@@ -192,21 +230,20 @@ p {
   }
   .work-inquiry-section {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
   }
   .content-container {
     text-align: center;
     padding: 0;
   }
+
   .work-inquiry-section h3 {
     margin-bottom: 15px !important;
   }
   .work-inquiry-section p {
     line-height: 1.2 !important;
   }
-  .work-inquiry-section {
-    padding: 15px 30px !important;
-  }
+
   .each-contact {
     padding: 25px 12px;
     border-bottom: 1px solid var(--secondary-color);
@@ -214,4 +251,17 @@ p {
   .each-contact:last-child {
     border: none;
   }
+}
+@media (min-width: 992px) {
+  .fixed-top {
+    padding: 15px 250px;
+
+    /* right: 230px !important;
+    left: 250px !important;
+    right: 250px !important; */
+  }
+  /* .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  } */
 }

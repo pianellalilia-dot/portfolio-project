@@ -56,7 +56,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle active"
                 href="/working-on.html"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -79,18 +79,10 @@
                     >Research projects</a
                   >
                 </li>
-                <li>
-                  <a class="dropdown-item" href="/working-on.html#gastronomy"
-                    >Gastronomy</a
-                  >
-                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/contact.html"
+              <a class="nav-link" aria-current="page" href="/contact.html"
                 >Contact</a
               >
             </li>
@@ -99,15 +91,15 @@
       </div>
     </nav>
     <div class="content-container container">
-      <div class="container">
+      <div class="content">
         <h1 class="mb-5">Take a look at what I've been working on!</h1>
 
-        <div id="front-end-developer-projects">
+        <div class="mt-5 mb-3" id="front-end-developer-projects">
           <h2>Coding</h2>
         </div>
 
         <div class="row">
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <img
               src="/images/meteo-app.png"
               class="img-fluid mb-3 rounded"
@@ -116,7 +108,7 @@
             <h3 class="text-center m-0">Landing Page</h3>
             <p class="text-center text-muted">My first step into coding</p>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <img
               src="/images/meteo-app.png"
               class="img-fluid mb-3 rounded"
@@ -127,7 +119,7 @@
               Built with HTML,CSS and JavaScript
             </p>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <img
               src="/images/ai-curriculum-quote-generator.png"
               class="img-fluid mb-3 rounded"
@@ -139,7 +131,7 @@
             </p>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <img
               src="/images/clock-world.png"
               class="img-fluid mb-3 rounded"
@@ -148,28 +140,51 @@
             <h3 class="text-center m-0">World Clock</h3>
             <p class="text-center text-muted">Built with Vanilla JavaScript</p>
           </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="/images/meteo-app.png"
+              class="img-fluid mb-3 rounded"
+              alt=""
+            />
+            <h3 class="text-center m-0">This website</h3>
+            <p class="text-center text-muted">
+              Built it to be responsive to different devices
+            </p>
+          </div>
+        </div>
+        <div class="mt-5 mb-3" id="research-projects">
+          <h2>Research-projects</h2>
         </div>
       </div>
-    </div>
-    <div id="research-projects">research-projects</div>
-    <div id="gastronomy">Gatronomy</div>
-
-    <footer>
-      <div class="text-center mt-3 mb-2">
-        <a
-          class="link-dark text-decoration-none"
-          href="emailto:pianella.lilia@gmail.com"
-          >pianella[dot]lilia[at]gmail[dot]com</a
+      <footer>
+        <div
+          class="work-inquiry-section mt-0 mt-md-5 justify-content-between mb-3 d-flex"
         >
-      </div>
-      <div
-        class="d-flex justify-content-center pb-4 fs-4"
-        style="color: #4d6a61"
-      >
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-square-linkedin"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-      </div>
-    </footer>
+          <div>
+            <h4>Work Inquiry</h4>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div class="d-none d-lg-block">
+            <a href="/contact.html" class="btn btn-branding mt-3">
+              Contact Info
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pb-4 fs-4 social-links">
+          <a href="mailto:pianella.lilia@gmail.com" target="_blank">
+            <i class="fa-solid fa-at fs-2"></i
+          ></a>
+          <a href="https://github.com/liliapianella-dot" target="_blank">
+            <i class="fa-brands fa-github fs-2"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/lilia-pianella/" target="_blank">
+            <i class="fa-brands fa-linkedin fs-2"></i
+          ></a>
+          <a href="#" target="#">
+            <i class="fa-brands fa-instagram fs-2"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
