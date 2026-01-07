@@ -234,6 +234,9 @@ footer .social-links a:hover {
   .project-description p {
     margin-bottom: 15px !important;
   }
+  .project-description {
+    margin-bottom: 0 !important;
+  }
   .content h1 {
     margin-top: 100px !important;
   }
@@ -245,9 +248,7 @@ footer .social-links a:hover {
   .new-app {
     margin-bottom: 0px !important;
   }
-  .new-app:last child {
-    margin-bottom: 0 !important;
-  }
+
   .project-description {
     text-align: center;
     padding: 15px 30px;
@@ -267,6 +268,7 @@ footer .social-links a:hover {
   .work-inquiry-section {
     text-align: center;
     padding: 10px 20px !important;
+    margin-top: 45px;
   }
   .content-container {
     text-align: center;
@@ -286,6 +288,14 @@ footer .social-links a:hover {
   }
   .each-contact:last-child {
     border: none;
+  }
+  .work-section h2 {
+    font-size: 40px;
+    font-family: var(--heading-font-family);
+  }
+  .my-research-projects h2 {
+    font-size: 18px;
+    font-family: var(--default-font-family);
   }
 }
 @media (min-width: 992px) {
